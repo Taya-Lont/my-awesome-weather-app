@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather forecast</title>
+    <link href="src/styles.css" />
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tinos&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/eb3cf0f4bf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="border">
+        <h1>
+          Weather forecast
+        </h1>
+        <body>
+          <div class="container">
+            <div class="row-1">
+              <form id="search-form">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Enter a city"
+                  id="search-in"
+                />
+                <button id="s-button">Search</button>
+                <button id="c-button">Current</button>
+              </form>
+            </div>
+            <h2 id="city"> Riseley </h2>
+            <ul id="date"> Saturday 14:40 </ul>
+            <ul id="desc">  </ul>
+      
+            <div class="row-3">
+              <i class="fa-solid fa-sun"></i>
+              <span class="h2" id="temp"></span>
+              <span class="units">°C</span>
+            </div>
+              <div class="col">
+             Pressure:   <span id="pressure"></span> mb <br>
+          Humidity: <span id="humidity"></span> <br>
+          WindSpeed: <span id="wind"></span> km/h
+              </div>
+      
+          <script src="src/index.js"></script>
+        </body>
+      </html>
+
+              
+          <br />
+          <br />
+
+          <div class="row">
+            <div class="col-2">
+              <p style="color: #73a8cf;"><strong> Mon </strong></p>
+              <div class="emoji">⛅️</div>
+              <p>
+                min ℃
+                <br />
+                max ℃
+              </p>
+
+              <p />
+            </div>
+            <div class="col-2">
+              <p style="color: #73a8cf;"><strong> Tues </strong></p>
+              <div class="emoji">⛅️</div>
+              <p>
+                min ℃
+                <br />
+                max ℃
+              </p>
+
+              <p />
+            </div>
+            <div class="col-2">
+              <p style="color: #73a8cf;"><strong> Wed </strong></p>
+              <div class="emoji">⛅️</div>
+              <p>
+                min ℃
+                <br />
+                max ℃
+              </p>
+
+              <p />
+            </div>
+            <div class="col-2">
+              <p style="color: #73a8cf;"><strong> Thurs </strong></p>
+              <div class="emoji">⛅️</div>
+              <p>
+                min ℃
+                <br />
+                max ℃
+              </p>
+
+            </p >
+            </div>
+            <div class="col-2">
+              <p style="color: #73a8cf;"><strong> Fri </strong></p>
+              <div class="emoji">⛅️</div>
+              <p>
+                min ℃
+                <br />
+                max ℃
+              </p>
+
+            </p >
+            </div>
+            <div class="col-2">
+              <p style="color: #73a8cf;"><strong> Sat </strong></p>
+              <div class="emoji">⛅️</div>
+              <p>
+                min ℃
+                <br />
+                max ℃
+              </p>
+
+            </p >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <div>
+      <p style="position: relative; right: -150px; color: #777;">
+        Coded by <span> Taya Lontkovska</span>
+      </p>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
+
+

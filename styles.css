@@ -1,0 +1,96 @@
+h1 {
+    font-family: "Caveat", cursive;
+    text-align: center;
+    font-weight: 900;
+    margin: 0;
+    font-size: 44px;
+    line-height: 48px;
+    display: inline;
+    color: #73a8cf;
+    margin-right: 30px;
+  }
+  
+  body {
+    background: rgb(165, 212, 213);
+    background: linear-gradient(
+      0deg,
+      rgba(165, 212, 213, 1) 8%,
+      rgba(249, 246, 238, 1) 100%
+    );
+  }
+  h2 {
+    font-family: "Caveat", cursive;
+    font-size: 24px;
+    font-weight: normal;
+  }
+  
+  form {
+    text-align: right;
+    display: inline;
+  }
+  h3,
+  h4 {
+    display: inline;
+  }
+  h4 {
+    position: relative;
+    left: 80px;
+  }
+  .row {
+    font-size: 17px;
+    color: #000;
+    font-family: "Tinos", serif;
+  }
+  
+  .border {
+    border: 1px solid, #777;
+    padding: 20px;
+    margin: 20px;
+    max-width: 750px;
+    border-radius: 10px;
+  }
+  
+  .columvorder {
+    border: 1px solid, #777;
+  }
+  
+  h4 {
+    color: #777;
+    font-size: 22px;
+    padding: 3px 0 10px;
+    font-family: "Caveat", cursive;
+  }
+  h3 {
+    font-family: "Caveat", cursive;
+    font-size: 30px;
+  }
+  
+  h5 {
+    color: #777;
+    font-size: 22px;
+    padding: 3px 0 10px;
+    font-family: "Caveat", cursive;
+    text-align: right;
+  }
+  .card-title {
+    text-align: left;
+    color: #000;
+    margin-top: 10px;
+  }
+  .col {
+    text-align: right;
+    bottom: 79px;
+    color: #000;
+  }
+  .current-temp {
+    font-size: 24px;
+  }
+  
+  .card-body {
+    padding-bottom: 0;
+    margin-top: 15px;
+  }
+  
+  ul {
+    text-align: left;
+  }
