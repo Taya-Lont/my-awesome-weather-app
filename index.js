@@ -58,9 +58,27 @@ function showWeather(response) {
   document.querySelector("h2").innerHTML = response.data.name;
   document.querySelector("#desc").innerHTML =
     response.data.weather[0].description;
-  document.querySelector("#temp").innerHTML = Math.round(
+  document.querySelector("#currentTemperature").innerHTML = Math.round(
     response.data.main.temp
   );
+  
+  function handleCelsius(event) {
+  event.preventDefault();
+  let tempElement = document.querySelector("#currentTemperature");
+  tempElement.innerHTML = "☀️66°";
+}
+
+function handleFahrenheit(event) {
+  event.preventDefault();
+  let tempElement = document.querySelector("#currentTemperature");
+  tempElement.innerHTML = "☀️19°";
+}
+
+let celsius = document.querySelector("#celsius");
+celsius.addEventListener("click", handleFahrenheit);
+let fahrenheit = document.querySelector("#fahrenheit");
+fahrenheit.addEventListener("click", handleCelsius);
+  
   document.querySelector("#pressure").innerHTML = response.data.main.pressure;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
