@@ -62,17 +62,7 @@ function showWeather(response) {
     response.data.main.temp
   );
   
-  function handleCelsius(event) {
-  event.preventDefault();
-  let tempElement = document.querySelector("#currentTemperature");
-  tempElement.innerHTML = "☀️66°";
-}
 
-function handleFahrenheit(event) {
-  event.preventDefault();
-  let tempElement = document.querySelector("#currentTemperature");
-  tempElement.innerHTML = "☀️19°";
-}
 
 let celsius = document.querySelector("#celsius");
 celsius.addEventListener("click", handleFahrenheit);
