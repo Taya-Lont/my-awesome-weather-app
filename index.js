@@ -54,13 +54,26 @@ theCity.addEventListener("submit", searchCity);
 let button = document.querySelector("#s-button");
 button.addEventListener("click", searchCity);
 
+//showWeather
 function showWeather(response) {
-  document.querySelector("h2").innerHTML = response.data.name;
+  console.log(response);
+  let iconElement = document.querySelector("#icon");
+  document.querySelector("#currentCity").innerHTML = response.data.name;
   document.querySelector("#desc").innerHTML =
     response.data.weather[0].description;
   document.querySelector("#currentTemperature").innerHTML = Math.round(
     response.data.main.temp
   );
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  celsiusTemperature = response.data.main.temp;
+
   
 //units conversion
 function displayFahrenheitTemperature(event) {
