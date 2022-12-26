@@ -54,8 +54,6 @@ theCity.addEventListener("submit", searchCity);
 let button = document.querySelector("#s-button");
 button.addEventListener("click", searchCity);
 
-<div class="temperature-container d-flex justify-content-end">
-                    <img src="" alt="" id="icon" />
 
 //showWeather
 function showWeather(response) {
